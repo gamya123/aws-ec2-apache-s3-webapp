@@ -1,8 +1,0 @@
-**commands to install apache web browser inside EC2**
-sudo yum update -y
-sudo yum install httpd -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
-
-**testing Apache**
-in browser ,paste the public IP and we can able to see apache test page
