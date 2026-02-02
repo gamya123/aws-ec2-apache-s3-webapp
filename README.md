@@ -54,6 +54,16 @@ sudo chmod -R 755 /var/www/html
 # Restart Apache
 sudo systemctl restart httpd
 
+# Final Architecture
+
+User Browser
+|
+|---- HTTP ----> EC2 (Apache + Dynamic Web App)
+| |
+| |-- IAM Role -->
+| |-- Fetch Images & Videos -->
+|
+|---- HTTPS --------> S3 Bucket (Images / Videos)
 
 
 
