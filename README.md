@@ -40,10 +40,10 @@ Create /var/www/html/index.php with PHP code that dynamically constructs S3 URLs
 
 # Installation Commands
 
-sudo yum update -y
-sudo yum install httpd php php-cli php-common php-json -y
-sudo systemctl enable httpd
-sudo systemctl start httpd
+* sudo yum update -y
+* sudo yum install httpd php php-cli php-common php-json -y
+* sudo systemctl enable httpd
+* sudo systemctl start httpd
 
 # Set Permissions
 sudo chown -R apache:apache /var/www/html
