@@ -40,5 +40,20 @@ of rendering them.
 Create /var/www/html/index.php with PHP code that dynamically constructs S3 URLs. The browser fetches media directly from S3 while EC2 handles only the dynamic 
 HTML generation.
 
+# Installation Commands
+
+sudo yum update -y
+sudo yum install httpd php php-cli php-common php-json -y
+sudo systemctl enable httpd
+sudo systemctl start httpd
+
+# Set Permissions
+sudo chown -R apache:apache /var/www/html
+sudo chmod -R 755 /var/www/html
+
+# Restart Apache
+sudo systemctl restart httpd
+
+
 
 
