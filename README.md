@@ -34,11 +34,9 @@ Create an IAM role named EC2-S3-MediaAccess with the AmazonS3ReadOnlyAccess poli
 1.Launch EC2 Instance
 Launch t2.micro with Amazon Linux 2023, attach the IAM role EC2-S3-MediaAccess, enable public IP, and configure security group for ports 22 (SSH) and 80 (HTTP).
 2.Install Apache & PHP
-Run: sudo yum install httpd php -y then enable and start Apache. PHP is required to execute dynamic logic; without it, browsers will download .php files instead 
-of rendering them.
+Run: sudo yum install httpd php -y then enable and start Apache. PHP is required to execute dynamic logic; without it, browsers will download .php files instead of rendering them.
 3.Create Dynamic Page
-Create /var/www/html/index.php with PHP code that dynamically constructs S3 URLs. The browser fetches media directly from S3 while EC2 handles only the dynamic 
-HTML generation.
+Create /var/www/html/index.php with PHP code that dynamically constructs S3 URLs. The browser fetches media directly from S3 while EC2 handles only the dynamic HTML generation.
 
 # Installation Commands
 
