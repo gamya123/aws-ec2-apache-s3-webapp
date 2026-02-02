@@ -63,5 +63,9 @@ User Browser
 * |
 * |---- HTTPS --------> S3 Bucket (Images / Videos)
 
+  # final output
+  ![WhatsApp Image 2026-02-02 at 7 02 33 PM](https://github.com/user-attachments/assets/99dd89d4-40c0-4811-9c4b-827f44fa38b4)
+
+
 
 
