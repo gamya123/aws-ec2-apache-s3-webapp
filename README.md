@@ -55,13 +55,13 @@ Create /var/www/html/index.php with PHP code that dynamically constructs S3 URLs
 # Final Architecture
 
 User Browser
-* |
-* |---- HTTP ----> EC2 (Apache + Dynamic Web App)
-* | |
-* | |-- IAM Role -->
-* | |-- Fetch Images & Videos -->
-* |
-* |---- HTTPS --------> S3 Bucket (Images / Videos)
+  |
+  |---- HTTP ----> EC2 (Apache + Dynamic Web App)
+  | |
+  | |-- IAM Role -->
+  | |-- Fetch Images & Videos -->
+  |
+  |---- HTTPS --------> S3 Bucket (Images / Videos)
 
 
 
