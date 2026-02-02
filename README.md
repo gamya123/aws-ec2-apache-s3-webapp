@@ -46,22 +46,22 @@ Create /var/www/html/index.php with PHP code that dynamically constructs S3 URLs
 * sudo systemctl start httpd
 
 # Set Permissions
-sudo chown -R apache:apache /var/www/html
-sudo chmod -R 755 /var/www/html
+* sudo chown -R apache:apache /var/www/html
+* sudo chmod -R 755 /var/www/html
 
 # Restart Apache
-sudo systemctl restart httpd
+* sudo systemctl restart httpd
 
 # Final Architecture
 
 User Browser
-|
-|---- HTTP ----> EC2 (Apache + Dynamic Web App)
-| |
-| |-- IAM Role -->
-| |-- Fetch Images & Videos -->
-|
-|---- HTTPS --------> S3 Bucket (Images / Videos)
+* |
+*|---- HTTP ----> EC2 (Apache + Dynamic Web App)
+*| |
+*| |-- IAM Role -->
+*| |-- Fetch Images & Videos -->
+*|
+*|---- HTTPS --------> S3 Bucket (Images / Videos)
 
 
 
