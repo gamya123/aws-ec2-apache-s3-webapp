@@ -1,7 +1,0 @@
-Name of the instance 
-choosing AMI 
-Instance type 
-creating key pair (download .pem file )
-choosing network settings (SSH,HTTP)
-storage settings 
-launch instance 
